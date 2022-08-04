@@ -138,6 +138,11 @@
     cursor: pointer;
 }
 
+.service-card button:hover
+{        
+   box-shadow: 0 3px 5px #ebaa5a65;
+}
+
 .grid-cards 
 {
     max-width: var(--max-width);
