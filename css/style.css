@@ -1,0 +1,48 @@
+@import 'bootstrap-icons/bootstrap-icons.css';
+@import 'components/navigation.css';
+@import 'components/hero.css';
+@import 'components/cards.css';
+@import 'components/footer.css';
+@import 'components/branding.css';
+
+
+:root
+{
+	--link-color: #e49f5f;
+	--nav-bar-bg-color:#022657;
+	--primary-bg-color: #06316d;
+	--max-width:1200px;
+}
+
+* 
+{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	font-family: sans-serif;
+
+}
+
+body
+{
+	min-width:100vw;
+	min-height:100vh;
+	background-image: url('../asserts/images/Background_Logo.png');
+	background-repeat: repeat;
+	background-size:cover;
+	background-color:var(--primary-bg-color);
+	font-family: "sans-serif";
+	overflow-x:hidden;
+	
+}
+
+
+.heading-text
+{
+	padding: 5rem 0;
+	color:var(--link-color);
+	text-align:center;
+	text-transform:capitalize;
+	font-size: 2.5rem;
+}
+

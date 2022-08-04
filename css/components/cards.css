@@ -1,0 +1,286 @@
+.who-are-we 
+{
+    max-width: var(--max-width);
+    width:100%;
+    padding: 40px;
+    background-color: #e3e3e3;
+    border-radius: 100px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.658); 
+}
+.inner-card
+{
+    background-color: white;
+    padding: 2rem;
+    border-radius: 80px;
+
+    
+}
+.inner-card p 
+{
+    padding: 1rem 0;
+    text-align: center;
+    font-size: .8rem;
+    color: rgba(0, 0, 0, 0.842);
+}
+
+.who-are-we img 
+{
+    width: 100px;
+    border-radius: 50%;
+    height: 100px;
+    position: absolute;
+    background-color: white;
+    border: 2px solid white;
+    object-fit: cover;
+    object-position: center;
+    transition: .5s linear;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.658); 
+}
+
+.who-are-we .one 
+{
+    top:0;
+    left: 70%;
+
+}
+
+.who-are-we .two
+{
+    top:80%;
+    left: 93%;
+
+}
+.who-are-we .three
+{
+    top:90%;
+    left: 10%;
+
+}
+
+.who-are-we .four
+{
+    top:10%;
+    left: 0;
+
+}
+
+
+.service-card
+{
+    max-width: 280px;
+    width: 100%;
+    background-color: #e3e3e3;
+    margin: 10px;
+    border-radius: 20px;
+    padding: 2px;
+    overflow: hidden;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.658); 
+   
+}
+.service-card .visual img 
+{
+    width: 100%;
+    left: 100%;
+    object-fit: cover;
+    transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1) ;
+}
+.service-card:hover img
+{
+    transform: scale(1.2);
+}
+.service-card .visual
+{
+    width: 100%;
+    height: 180px;
+    overflow: hidden;
+    border-radius:  20px;
+    object-fit: cover;
+}
+
+.service-card .text  h1 
+{
+    font-size: 1.4rem;
+    color: black;
+}
+
+.service-card .text 
+{
+    position: relative;
+    width: 90%;
+    left: 5%;
+    top: -20px;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 20px;
+}
+
+.service-card .text  p 
+{
+    font-size: .8rem;
+    padding: 5px  0 20px 0;
+}
+
+.service-card  button 
+{
+    padding: .3rem 1.5rem;
+    border: none;
+    background: linear-gradient(#f1ae5d, #835e31);
+    color:white;
+    border-radius: 10px;
+    text-transform: capitalize;
+    position: relative;
+    left: 100%;
+    transform: translateX(-100%);
+    cursor: pointer;
+}
+
+.grid-cards 
+{
+    max-width: var(--max-width);
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+
+.testtimonial-card
+{
+    display: flex;
+    padding: 10px;
+    margin: 10px;
+    max-width: 400px;
+    width:100%;
+    flex-shrink: 0;
+    position: relative;
+    flex-grow: 0;
+    height: 200px;
+    background-color: #e3e3e3;
+    border-radius: 20px;
+    cursor: pointer;
+    overflow: hidden;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.658);  
+    
+}
+
+.testimonial .container 
+{
+    max-width: calc(var(--max-width) - 250px);
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+.testimonial .container .icon-left 
+{
+    position: absolute;
+    top: 50%;
+    left: -40px;
+    font-size: 70px;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+    color: var(--link-color);
+}
+.testimonial .container .icon-right
+{
+    position: absolute;
+    top: 50%;
+    left: calc(100% + 40px);
+    font-size: 70px;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+    color: var(--link-color);
+}
+
+
+
+.testtimonial-card .logo 
+{
+    width: 15px;
+    position: absolute;
+    left: 93%;
+    top: 85%;
+    
+    transform: translate(-50%,-50%);
+}
+.testtimonial-card .visual
+{
+    width: 240px;
+    height: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    
+
+}
+
+.testtimonial-card .visual i 
+{
+    color: var(--link-color);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 45px;
+    cursor: pointer;
+    z-index: 3;
+    opacity: .5;
+}
+.testtimonial-card:hover .visual img
+{
+    display: initial;
+    filter: blur(0);
+}
+.testtimonial-card:hover .visual i
+{
+    opacity: 1;
+}
+.testtimonial-card:hover .visual img 
+{
+    transform: scale(1);
+    
+}
+.testtimonial-card .visual img 
+{
+    width: 100%;
+    transition: 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+    height: 100%;
+    transform: scale(1.2);
+    filter: blur(1px);
+    object-fit: cover;
+}
+
+
+
+.testtimonial-card .text 
+{
+    padding: 10px;
+}
+.testtimonial-card .text h1 
+{
+    font-size: 1.2rem;
+    color: black;
+}
+
+
+.testtimonial-card .text p 
+{
+    color: rgb(102, 88, 88);
+}
+.testimonial-grid 
+{
+    flex-shrink: -1;
+    display: flex;
+    overflow: hidden;
+    width:100%;
+    scroll-snap-type: mandatory;
+    scroll-behavior: smooth;
+    
+}
