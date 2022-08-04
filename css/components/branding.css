@@ -18,8 +18,23 @@
 	transform: translateX(-50%);
 	position: relative;
 	left: 50%;
+	
 
+}
 
+@keyframes scroll 
+{
+	0%{
+		transform: translateX(0)
+	}
+	50%
+	{
+		transform: translateX( -1000px);
+	}
+	100%
+	{
+		transform: translateX(0);
+	}
 }
 .branding .container .logos
 
@@ -61,6 +76,7 @@
 	padding: 1rem;
 	display:flex;
 	align-items:center;
+	animation: scroll 40s linear infinite;
 	position: relative;
 	
 }
