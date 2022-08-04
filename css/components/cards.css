@@ -1,7 +1,7 @@
 .who-are-we 
 {
     max-width: var(--max-width);
-    width:100%;
+    width:90%;
     padding: 40px;
     background-color: #e3e3e3;
     border-radius: 100px;
@@ -146,7 +146,8 @@
     transform: translateX(-50%);
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content:space-evenly;
+    width: 90%;
 }
 
 
@@ -175,6 +176,7 @@
     max-width: calc(var(--max-width) - 250px);
     position: relative;
     left: 50%;
+    width: 80%;
     transform: translateX(-50%);
 
 }
@@ -205,8 +207,8 @@
 {
     width: 15px;
     position: absolute;
-    left: 93%;
-    top: 85%;
+    left: 90%;
+    top: 83%;
     
     transform: translate(-50%,-50%);
 }
@@ -216,6 +218,7 @@
     height: 100%;
     border-radius: 20px;
     overflow: hidden;
+    
     position: relative;
     
 
@@ -261,18 +264,23 @@
 
 .testtimonial-card .text 
 {
-    padding: 10px;
+    margin: 5px;
+    padding: 7px;
+    border-radius: 15px;
+    background-color: white;
 }
 .testtimonial-card .text h1 
 {
     font-size: 1.2rem;
     color: black;
+    padding-bottom: 5px;
 }
 
 
 .testtimonial-card .text p 
 {
     color: rgb(102, 88, 88);
+    font-size: 14px;
 }
 .testimonial-grid 
 {

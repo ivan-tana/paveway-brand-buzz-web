@@ -1,6 +1,7 @@
 .hero-container
 {
 	height:75vh;
+	width: 100vw;
 	position:relative;
 	
 }
@@ -17,13 +18,23 @@
 	object-fit:cover;
 	z-index:-1;
 	
+
+}
+
+.hero-container .max-width 
+{
+	max-width: var(--max-width);
+	height: 100%	;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
 }
 
 .hero-container .text 
 {
 	position:absolute;
 	right:18%;
-	bottom:10%;
+	bottom:20%;
 	color: white;
 	width: 300px;
 }
@@ -34,6 +45,7 @@
     font-size: 2.4rem;
 	padding: .2 0;
 	margin:0;
+
 }
 
 .hero-container .text p 
@@ -76,3 +88,12 @@
 		right: 20px;
 	}
 }
+
+
+@media screen and (min-width: 1700px) {
+	.hero-container .text 
+	{
+		transform: scale(1.5);
+	}
+}
+
