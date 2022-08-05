@@ -32,10 +32,22 @@ function type_text(text, duration=200)
 }
 
 
+let type_observer = new IntersectionObserver((entries, type_observer) =>
+{
+    entries.forEach(entry => {
+        if(entry.isIntersecting)
+        {
+            type_text(entry.target, 200)
+            type_observer.unobserve(entry)
+        }
+    });
+
+})
+
 var type_texts = document.querySelectorAll('[type-animation]')
 type_texts.forEach(text => {
 
-    type_text(text, 200)
+    type_observer.observe(text)
 });
 
 
