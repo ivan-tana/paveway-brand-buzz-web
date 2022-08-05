@@ -38,7 +38,7 @@ let type_observer = new IntersectionObserver((entries, type_observer) =>
         if(entry.isIntersecting)
         {
             type_text(entry.target, 200)
-            type_observer.unobserve(entry)
+            type_observer.unobserve(entry.target)
         }
     });
 
