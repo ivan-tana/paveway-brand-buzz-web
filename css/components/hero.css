@@ -97,3 +97,18 @@
 	}
 }
 
+
+@media screen and (max-width:720px) 
+{
+	.hero-container .text 
+	{
+		transform: scale(.7);
+		right: -20px;
+		bottom: 20px;
+		text-align: right;
+	}
+	.hero-container .text button 
+	{
+		padding: .7rem 1rem;
+	}
+}

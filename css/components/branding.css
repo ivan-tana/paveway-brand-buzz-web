@@ -52,7 +52,7 @@
 	
 	display:flex;
 	align-items:center;
-	
+	padding: 1rem;
 	min-width: 250px;
 	flex-wrap:wrap;
 	
@@ -123,3 +123,14 @@
 letter-spacing: 1px;
 }
 
+@media screen and (max-width:720px)  
+{
+	.branding .heading 
+	{
+		font-size: 1rem;
+		min-width: auto;
+	
+	}
+
+
+}

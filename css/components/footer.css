@@ -20,6 +20,7 @@ footer .container
     flex-wrap: wrap;
     justify-content: space-evenly;
     display: flex;
+    gap: 30px;
 }
 
 footer .container div 
@@ -98,4 +99,18 @@ footer .container div.form button
     align-self:flex-end;
     padding-bottom: 10px;
     font-size: 12px;
+}
+@media screen and (max-width:720px) 
+{
+    footer .container
+    {
+        flex-direction: column;
+        padding: 1rem;
+        gap: 30px;
+    }
+
+    .copy-right
+    {
+        align-self: center;
+    }
 }
