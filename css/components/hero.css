@@ -111,4 +111,9 @@
 	{
 		padding: .7rem 1rem;
 	}
+
+	.hero-container
+	{
+		height: 50vh;
+	}
 }
